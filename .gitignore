@@ -1,0 +1,23 @@
+# --- Rust / Cargo ---
+/target/
+/**/target/
+
+/target_tmp/
+
+# Cargo lock (ignore only if you intentionally don’t commit it)
+/Cargo.lock
+
+# --- IDE / Editor (RustRover / IntelliJ family) ---
+.idea/
+*.iml
+out/
+vendor/
+
+# --- macOS / Windows ---
+.DS_Store
+Thumbs.db
+
+# --- OS / misc ---
+*.swp
+*.swo
+*~

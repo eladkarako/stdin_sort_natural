@@ -1,0 +1,17 @@
+[package]
+name = "stdin_sort_natural"
+version = "26.8.3"
+edition = "2024"
+
+[dependencies]
+
+[build-dependencies]
+winres = "0.1.12"
+
+[profile.release]
+opt-level = "z"          # “z” = maximum size reduction (equivalent to -C opt-level=s)
+lto = true               # Link‑time optimisation
+codegen-units = 1        # Better optimisation (single codegen unit)
+panic = "abort"          # Remove unwinding tables
+debug = false            # No debug info
+strip = true             # Strip symbols (requires rustc 1.56+)
