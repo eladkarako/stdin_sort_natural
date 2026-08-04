@@ -1,2 +1,7 @@
+26.8.4
++ adding unique and trim for lines.
++ changed code to accept from STDIN, with guard to only work from pipeline (to make sure there is EOF).
++ a lot of micro changes that didn't came through, eventually working by reference, avoiding re-allocation or working directly with strings.
+
 26.8.3
 + initial

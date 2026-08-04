@@ -32,12 +32,12 @@ fn main() {
     res.set("ProductName", "stdin_tail");
 
     //--------------------------  remember to change version in Cargo.toml's version under [package]
-    res.set("FileVersion", "26.8.3.0");
-    res.set("ProductVersion", "26.8.3.0");
+    res.set("FileVersion", "26.8.4.0");
+    res.set("ProductVersion", "26.8.4.0");
 
     let major: u64 = 26;
     let minor: u64 = 8;
-    let patch: u64 = 3;
+    let patch: u64 = 4;
     let release: u64 = 0;
     let packed = (major << 48) | (minor << 32) | (patch << 16) | release;
     res.set_version_info(winres::VersionInfo::FILEVERSION, packed);
